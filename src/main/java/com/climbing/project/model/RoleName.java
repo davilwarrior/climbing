@@ -5,11 +5,13 @@
  */
 package com.climbing.project.model;
 
+import java.io.Serializable;
+
 /**
  *
  * @author David
  */
-public enum  RoleName {
+public enum  RoleName implements Serializable{
     ROLE_USER,
     ROLE_ADMIN
 }

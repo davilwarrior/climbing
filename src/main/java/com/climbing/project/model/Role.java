@@ -9,12 +9,13 @@ package com.climbing.project.model;
  *
  * @author David
  */
+import java.io.Serializable;
 import org.hibernate.annotations.NaturalId;
 import javax.persistence.*;
 
 @Entity
 @Table(name = "roles")
-public class Role {
+public class Role implements Serializable{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
